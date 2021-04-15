@@ -1,0 +1,67 @@
+.page-header {
+  font-size: 20px;
+  color: #424243;
+  font-weight: 600;
+}
+
+.admin-menu {
+  a {
+    color: #0d0b92;
+    margin-right: 0.75rem;
+    font-weight: 600;
+    &:hover {
+      color: #121212;
+    }
+  }
+
+  a.active {
+    color: #121212;
+    cursor: text;
+  }
+}
+
+.product-page {
+  .card {
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #0d0b92;
+    }
+    .card-image {
+      height: 200px;
+      @media (max-width: 768px) {
+        height: 140px;
+      }
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .old-price {
+      font-size: 80%;
+      opacity: 0.8;
+      text-decoration: line-through;
+    }
+
+    .price {
+      color: #0d0b92;
+    }
+  }
+}
+
+.products-categories {
+  overflow: auto;
+  span {
+    white-space: nowrap;
+    cursor: pointer;
+    &:hover {
+      color: #0d0b92;
+      text-decoration: underline;
+    }
+  }
+}

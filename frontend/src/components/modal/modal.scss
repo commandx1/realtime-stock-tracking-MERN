@@ -1,0 +1,23 @@
+.modal-wrapper {
+  z-index: 1041;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  .modal-content {
+    max-width: 600px;
+    margin: 0 1rem;
+    padding: 1rem;
+    background: white;
+  }
+}

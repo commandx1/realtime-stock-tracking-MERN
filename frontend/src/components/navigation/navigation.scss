@@ -1,0 +1,33 @@
+nav.navigation {
+  height: 64px;
+  background-color: #0d0b92;
+  .container {
+    .logo {
+      font-size: 30px;
+      font-weight: 600;
+      color: #ed502f;
+      cursor: pointer;
+    }
+    .navigation-list {
+      a {
+        margin: 0 0.6rem;
+        color: white;
+        font-weight: 600;
+        transition: 300ms;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -ms-transition: 300ms;
+        -o-transition: 300ms;
+        &:hover {
+          color: #ed502f;
+          text-decoration: none;
+        }
+      }
+
+      a.active {
+        color: #ed502f;
+        cursor: text !important;
+      }
+    }
+  }
+}
